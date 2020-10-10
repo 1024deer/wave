@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+#main{ width:100%; float:left; padding:10px 0; border:1px  #090}
+.ctbox{ margin:0 auto; width:800px; border:1px  #00F}
+.t1{
+	width: 550px;
+	height: 60px;
+	margin-left: 123px;
+	font-size: 22px;
+	
+}
+#userCode{
+	height: 30px;
+	width: 150px;
+	
+}
+#float1{
+	margin-left: 153px;
+	float: left;
+	height: 50px;
+}
+#float2{
+	float: left;
+	width: 150px;
+	height: 50px;
+	margin-left: 30px;
+}
+#float3{
+	float: right;
+	height: 50px;
+	margin-right: 130px;
+}
+img{
+	width: 100px;
+	height: 30px;
+}
+#submit{
+
+}
+	#entitle{
+		font-size: 28px;
+		color: rgb(20,180,180);
+		text-align: center;
+	}

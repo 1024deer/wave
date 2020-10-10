@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<meta http-equiv="Content-Type" content="text/html" charset= "utf-8" />
+<title>登录验证</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body style="background-image: url(images/resource.jpg);">
+<div id="main">
+<div><p id="entitle">Welcome to my first Webpage</p></div>
+<div class="ctbox">
+	<div>
+		  <form action="servlet/LoginController.do" method="post" >
+			<p>
+		    <input class="t1" id="name" name="username" placeholder="请输入账号"/>
+			</p>
+		    <p>
+		    <input class="t1" id="pas" type="password" name="passwd" placeholder="请输入密码" />
+		    </p>
+			<div  id="float1">
+				<img title="看不清？换一个"  id="verifyCode" src="servlet/CreateVefifyCodeImage" onclick="changeCode()"/>
+			</div>
+			<div  id="float2">
+			<input id="userCode" name="userCode" placeholder="请输入验证码"/>
+			</div>
+			<div  id="float3">
+			<input type="checkbox" id="mdl" name="checkbox" value="yes" /> <label>一周内免登录</label>
+			</div>
+		       <input class="t1" id="submit" type="submit" value="提交验证"/>
+		    </form>
+	</div>
+	
+</div>
+</div>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
