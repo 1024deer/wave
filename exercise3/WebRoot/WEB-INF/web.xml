@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>exercise</display-name>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>controller.Logincontroller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutController</servlet-name>
+    <servlet-class>controller.Logincontroller.LogoutController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterController</servlet-name>
+    <servlet-class>controller.Logincontroller.RegisterController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AjaxLoginCheck</servlet-name>
+    <servlet-class>controller.Logincontroller.AjaxLoginCheck</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckExistController</servlet-name>
+    <servlet-class>controller.Logincontroller.CheckExistController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryProvinceCityController</servlet-name>
+    <servlet-class>controller.Logincontroller.QueryProvinceCityController</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/servlet/LoginController.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutController</servlet-name>
+    <url-pattern>/servlet/LogoutController.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterController</servlet-name>
+    <url-pattern>/register.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxLoginCheck</servlet-name>
+    <url-pattern>/ajaxLoginCheck.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckExistController</servlet-name>
+    <url-pattern>/checkExist.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryProvinceCityController</servlet-name>
+    <url-pattern>/queryProvinceCity.do</url-pattern>
+  </servlet-mapping>
+  
+  		<filter>
+		<filter-name>permissionCheckFilter</filter-name>
+		<filter-class>filter.PermissionFilter</filter-class>
+		<init-param>
+			<param-name>notCheckUri</param-name>
+		<param-value>/servlet/CreateVefifyCodeImage,/servlet/LoginController.do,/servlet/LogoutController.do,/error.jsp,/ajaxLoginCheck.do,/queryProvinceCity.do,/checkExist.do,/register.do</param-value>
+		</init-param>
+		</filter>
+		
+		<filter>
+		<filter-name>resourceCheckFilter</filter-name>
+		<filter-class>filter.ResourceFilter</filter-class>
+		</filter>
+		
+		<filter-mapping>
+				<filter-name>permissionCheckFilter</filter-name>
+				<url-pattern>*.jsp</url-pattern>
+				<url-pattern>*.do</url-pattern>
+		</filter-mapping>
+		<filter-mapping>
+				<filter-name>resourceCheckFilter</filter-name>
+				<url-pattern>/download.jsp</url-pattern>
+				<url-pattern>/queryDownload.do</url-pattern>
+				<url-pattern>/downloadManage.jsp</url-pattern>
+				<url-pattern>/userManage.jsp</url-pattern>
+				<url-pattern>/user.jsp</url-pattern>
+		</filter-mapping>
+  		
+  
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

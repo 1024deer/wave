@@ -1,0 +1,16 @@
+@charset "utf-8";
+#left{
+			float: left;
+			height: 400px;
+			width: 400px;
+			margin-left: 25%;
+			border-right: 1px gray solid;
+		}
+		#right{
+			float: right;
+			margin-right: 22%;
+			margin-top: 130px;
+		}
+		h2{
+			color: red;
+		}

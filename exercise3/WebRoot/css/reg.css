@@ -1,0 +1,85 @@
+@charset "utf-8";
+body {
+    font-size: 14px;
+}
+
+a:visited {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#loginForm {
+    width: 410px;
+    background-color: #fff;
+    margin: 60px auto 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    opacity: 0.7;
+    /*…Ë÷√Õ∏√˜∂»*/
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+.titleRegister {
+    color: #4D5E9F;
+    font-size: 18px;
+    margin: 10px 40px;
+}
+
+.titleLogin {
+    margin-left: 70px;
+}
+
+#loginForm p {
+    text-indent: 45px;
+    margin: 8px 0px;
+}
+
+.auth_err {
+    font-size: 12px;
+    color: red;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    text-indent: 45px;
+}
+
+input {
+    height: 30px;
+    border: 1px solid #ccc;
+    width: 280px;
+}
+
+select {
+    height: 30px;
+    border: 1px solid #ccc;
+    width: 286px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+
+
+#btLogin {
+    width: 282px;
+    height: 40px;
+    margin-top: 8px;
+    background-color: #1890FF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.8em;
+    text-indent: 0px;
+    font-size: 16px;
+    padding: 1px 0px;
+}

@@ -1,0 +1,6 @@
+if(request.getSession().getAttribute("chrName")==null)
+{
+	request.setAttribute("error_1", "±§Ç¸£¬ÎÞÈ¨ÏÞ");
+	RequestDispatcher rd = request.getRequestDispatcher("../error.jsp");
+	rd.forward(request , response);
+}
