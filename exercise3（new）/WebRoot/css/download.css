@@ -1,0 +1,84 @@
+@charset "utf-8";
+*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+				#head{
+					height: 120px;
+					width: 100%;
+				}
+				#logo{
+					float: left;
+					height: 200px;
+					width: 200px;
+				}
+				#userinfo{
+					font-size: 18px;
+					float:right;
+					height: 30px;
+					width: 300px;
+				}
+				#daohang{
+				}
+				li{
+					float: right;
+					list-style: none; 
+					margin-right: 20px;
+					font-size: 30px;
+				}
+				}
+				a{
+					text-decoration: none;
+				}
+				#content{
+					margin: 0 auto;
+					width: 800px;
+					height: 800px;
+					background-color: white;
+				}
+				.fileimage{
+					width: 120px;
+					height: 120px;
+					margin: 5px;
+				}
+				.fileleft{
+					float: left;
+					height: 220px;
+					width: 130px;
+				}
+				.fileright{
+					width: 800px;
+					height: 220px;
+				}
+				.smallsize{
+					font-size: 14px;
+					color: gray;
+				}
+				.filedescription{
+	
+				}
+				.button{
+					display: block;
+					float: right;
+					color: #68D69D;
+					border: 2px solid #68D69D;
+					width: 150px;
+					height: 35px;
+					font-size: 24px;
+					text-align: center;
+					margin: 5px;
+				}
+				.filetitle{
+					font-size: 38px;
+				}
+				.smallstar{
+					height: 18px;
+					width: 90px;
+
+				}
+				#content ul li{
+					margin-bottom: 15px;
+				}

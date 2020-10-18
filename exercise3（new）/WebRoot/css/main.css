@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{
+		margin: 0;
+		padding: 0;
+	}
+			#head{
+				height: 120px;
+				width: 100%;
+			}
+			#logo{
+				float: left;
+				height: 200px;
+				width: 200px;
+			}
+			#userinfo{
+				font-size: 18px;
+				float:right;
+				height: 30px;
+				width: 300px;
+			}
+
+			li{
+				float: right;
+				list-style: none; 
+				margin-right: 20px;
+				font-size: 30px;
+			}
+			.imgs{
+				margin-left: 250px;
+			}
+			a{
+				text-decoration: none;
+			}
+			#content{
+				margin: 0 auto;
+				width: 800px;
+				background-color: white;
+			}
